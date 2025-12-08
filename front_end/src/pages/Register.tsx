@@ -71,7 +71,7 @@ export const Register = () => {
         );
 
         setTimeout(() => {
-          navigate("/login");
+          navigate("/");
         }, REDIRECT_DELAY);
       } catch (error) {
         console.error("Erro no cadastro:", error);
@@ -86,7 +86,7 @@ export const Register = () => {
   );
 
   const handleRedirectToLogin = () => {
-    navigate("/login");
+    navigate("/");
   };
 
   return (

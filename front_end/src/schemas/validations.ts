@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { loginSchema } from "./loginSchema";
 import { registerSchema } from "./registerSchema";
+import { taskSchema } from "./taskSchemas";
 
 export const validateLogin = (data: unknown) => {
   try {
@@ -22,6 +23,22 @@ export const validateLogin = (data: unknown) => {
 export const validateRegister = (data: unknown) => {
   try {
     const validatedData = registerSchema.parse(data);
+    return { success: true as const, data: validatedData };
+  } catch (error) {
+    if (error instanceof z.ZodError) {
+      const errors: Record<string, string> = {};
+      for (const issue of error.issues) {
+        const key = String(issue.path[0]);
+        errors[key] = issue.message;
+      }
+      return { success: false as const, errors };
+    }
+    throw error;
+  }
+};
+export const validateTask = (data: unknown) => {
+  try {
+    const validatedData = taskSchema.parse(data);
     return { success: true as const, data: validatedData };
   } catch (error) {
     if (error instanceof z.ZodError) {

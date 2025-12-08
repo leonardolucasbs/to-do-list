@@ -14,11 +14,13 @@ import { validateLogin } from "../schemas/validations";
 import type { User } from "../types/user/user";
 import type { LoginRequest } from "../types/user/loginRequest";
 import { LoginData } from "../services/userService";
+import { useAuth } from "../context/useAuth";
 
 const REDIRECT_DELAY = 2000;
 
 export const Login = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -65,10 +67,12 @@ export const Login = () => {
 
         console.log("Resposta do login:", user);
 
+        login(user);
+
         setMsgSucesso(`Bem-vindo(a), ${user.name}!`);
 
         setTimeout(() => {
-          navigate("/home");
+          navigate("/Home");
         }, REDIRECT_DELAY);
       } catch (error) {
         console.error("Erro no login:", error);
@@ -77,7 +81,7 @@ export const Login = () => {
         setIsLoading(false);
       }
     },
-    [formData, navigate]
+    [formData, navigate, login]
   );
 
   return (

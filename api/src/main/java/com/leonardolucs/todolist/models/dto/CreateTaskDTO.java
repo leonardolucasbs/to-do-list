@@ -1,11 +1,11 @@
 package com.leonardolucs.todolist.models.dto;
 
+import com.leonardolucs.todolist.models.enums.Priority;
 import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 public record CreateTaskDTO(
         @NotBlank(message = "The title cannot be blank.")
@@ -17,6 +17,7 @@ public record CreateTaskDTO(
 
         String description,
 
-        List<Long> labelId
+        @NotNull(message = "The priority cannot be null.")
+        Priority priority
 ) {
 }
