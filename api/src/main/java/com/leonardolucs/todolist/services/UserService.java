@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -23,7 +24,7 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    private Optional<User> findUserById(Long id) {
+    private Optional<User> findUserById(UUID id) {
         return userRepository.findById(id);
     }
 
@@ -32,7 +33,7 @@ public class UserService {
     }
 
 
-    public User findEntityById(Long id) {
+    public User findEntityById(UUID id) {
         return userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found"));
     }
@@ -47,7 +48,7 @@ public class UserService {
 
     }
 
-    public ResponseEntity<?> getUser(Long id) {
+    public ResponseEntity<?> getUser(UUID id) {
         Optional<User> foundUser = findUserById(id);
         return foundUser.isEmpty()
                 ? ResponseEntity.badRequest().body("User not registered.")
@@ -71,11 +72,11 @@ public class UserService {
         userRepository.save(newUser);
     }
 
-    public void deleteUser(Long id) {
+    public void deleteUser(UUID id) {
         userRepository.deleteById(id);
     }
 
-    public ResponseEntity<?> updateUser(Long id, UserDTO userDTO) {
+    public ResponseEntity<?> updateUser(UUID id, UserDTO userDTO) {
         Optional<User> foundUser = findUserById(id);
 
         if (foundUser.isEmpty()) {

@@ -1,4 +1,6 @@
 package com.leonardolucs.todolist.models.dto;
 
-public record LoginUserDTO(Long id , String name) {
+import java.util.UUID;
+
+public record LoginUserDTO(UUID id, String name) {
 }

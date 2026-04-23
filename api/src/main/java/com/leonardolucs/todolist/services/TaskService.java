@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -21,7 +22,7 @@ public class TaskService {
     private final DescriptionService descriptionService;
     private final UserService userService;
 
-    public Task createTask(CreateTaskDTO taskDTO, Long userId) {
+    public Task createTask(CreateTaskDTO taskDTO, UUID userId) {
         User user = userService.findEntityById(userId);
         Task newTask = new Task();
         newTask.setTitle(taskDTO.title());
@@ -29,7 +30,7 @@ public class TaskService {
         newTask.setPriority(taskDTO.priority());
         newTask.setUser(user);
 
-        taskRepository.save(newTask); // Save once to get the task ID
+        taskRepository.save(newTask);
 
         if (taskDTO.description() != null && !taskDTO.description().isBlank()) {
             Description description = descriptionService.createDescription(taskDTO.description(), newTask);
@@ -39,13 +40,13 @@ public class TaskService {
         return taskRepository.save(newTask);
     }
 
-    public ResponseEntity<?> getTaskById(Long id) {
+    public ResponseEntity<?> getTaskById(UUID id) {
         Optional<Task> foundTask = taskRepository.findById(id);
         return foundTask.<ResponseEntity<?>>map(task -> ResponseEntity.ok(task.toDto()))
                 .orElse(ResponseEntity.badRequest().body("Task not found."));
     }
 
-    public List<TaskDTO> getAllTasks(Long userId) {
+    public List<TaskDTO> getAllTasks(UUID userId) {
         User user = userService.findEntityById(userId);
 
         return user.getTasks()
@@ -54,7 +55,7 @@ public class TaskService {
                 .collect(Collectors.toList());
     }
 
-    public void deleteTask(Long id) {
+    public void deleteTask(UUID id) {
         taskRepository.deleteById(id);
     }
 }
