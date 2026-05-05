@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequiredArgsConstructor
@@ -19,29 +20,29 @@ public class TaskController {
     private final TaskService taskService;
 
     @PostMapping
-    public ResponseEntity<Void> createTask(@Valid @RequestBody CreateTaskDTO taskDTO, @RequestParam Long userId) {
+    public ResponseEntity<Void> createTask(@Valid @RequestBody CreateTaskDTO taskDTO, @RequestParam UUID userId) {
         taskService.createTask(taskDTO, userId);
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
     @GetMapping
-    public ResponseEntity<List<TaskDTO>> getTasks(@RequestParam Long userId) {
+    public ResponseEntity<List<TaskDTO>> getTasks(@Valid @RequestParam UUID userId) {
         return ResponseEntity.ok(taskService.getAllTasks(userId));
     }
 
-    @GetMapping("/{taskId}")
-    public ResponseEntity<?> getTaskById(@PathVariable Long taskId) {
-        return ResponseEntity.ok(taskService.getTaskById(taskId));
+    @GetMapping("/{userId}/{taskId}")
+    public ResponseEntity<?> getTaskById(@Valid @PathVariable UUID taskId,  @PathVariable UUID userId) {
+        return ResponseEntity.ok(taskService.getTaskById(taskId,  userId));
     }
 
-    @DeleteMapping("/{taskId}")
-    public ResponseEntity<?> deleteTask(@PathVariable Long taskId) {
-        taskService.deleteTask(taskId);
+    @DeleteMapping("/{userId}/{taskId}")
+    public ResponseEntity<?> deleteTask(@PathVariable UUID taskId,   @PathVariable UUID userId) {
+        taskService.deleteTask(taskId,  userId);
         return ResponseEntity.noContent().build();
     }
 
 //    @PutMapping("/{taskId}")
-//    public ResponseEntity<?> updateTask(@PathVariable Long taskId, @RequestParam Long userId) {
+//    public ResponseEntity<?> updateTask(@PathVariable UUID taskId, @RequestParam UUID userId) {
 //        taskService.updateTask(taskId, userId );
 //        return ResponseEntity.ok().build();
 //    }

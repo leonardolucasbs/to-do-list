@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Entity(name = "tasks")
 @NoArgsConstructor
@@ -18,8 +19,8 @@ import java.time.LocalDateTime;
 @Setter
 public class Task {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID taskId;
     private String title;
     private LocalDateTime dateTime;
 
@@ -36,7 +37,7 @@ public class Task {
 
     public TaskDTO toDto(){
         return new TaskDTO(
-                this.id,
+                this.taskId,
                 this.title,
                 this.dateTime,
                 this.description == null ? "" : this.description.getDescription(),

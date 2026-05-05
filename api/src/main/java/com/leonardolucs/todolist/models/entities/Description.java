@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.UUID;
+
 @Entity(name = "descriptions")
 @NoArgsConstructor
 @AllArgsConstructor
@@ -14,8 +16,8 @@ import lombok.Setter;
 @Setter
 public class Description {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
 
     private String description;
 
