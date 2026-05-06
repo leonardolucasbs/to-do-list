@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8cecea25-f698-4776-bb8d-57d2178f671e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/controllers/TaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/controllers/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/LabelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/LabelDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/LoginUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/LoginUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/PublicUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/PublicUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/TaskDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/TaskDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Description.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Label.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/DescriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/DescriptionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/services/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/services/TaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/services/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3977fQrZ6v2bhCghYkNrFUSPDiy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHELLCHECK.PATH&quot;: &quot;C:\\Users\\Leona\\AppData\\Roaming\\JetBrains\\IntelliJIdea2026.1\\plugins\\Shell Script\\shellcheck.exe&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Leona/OneDrive/Documentos/1-programacao/1-projetos/to-do-list-JAVA&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Leona\\OneDrive\\Documentos\\1-programacao\\1-projetos\\to-do-list-JAVA\\front_end\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="to-do-list-JAVA" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="to-do-list-JAVA" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cecea25-f698-4776-bb8d-57d2178f671e" name="Changes" comment="" />
+      <created>1770035359815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770035359815</updated>
+      <workItem from="1774015867578" duration="761000" />
+      <workItem from="1774201433836" duration="947000" />
+      <workItem from="1774355919667" duration="1899000" />
+      <workItem from="1776257393554" duration="271000" />
+      <workItem from="1776966168579" duration="3274000" />
+      <workItem from="1776982541781" duration="124000" />
+      <workItem from="1776982679769" duration="45000" />
+      <workItem from="1777023316188" duration="1369000" />
+      <workItem from="1777029630870" duration="620000" />
+      <workItem from="1777115349676" duration="378000" />
+      <workItem from="1777208704183" duration="218000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
