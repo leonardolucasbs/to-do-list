@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cecea25-f698-4776-bb8d-57d2178f671e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/controllers/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/controllers/UsersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/LabelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/LabelDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/LoginUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/LoginUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/PublicUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/PublicUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/TaskDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/dto/TaskDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Description.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Description.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Label.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Label.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/models/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/DescriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/DescriptionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/TaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/services/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/services/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/leonardolucs/todolist/services/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +85,8 @@
       <workItem from="1777029630870" duration="620000" />
       <workItem from="1777115349676" duration="378000" />
       <workItem from="1777208704183" duration="218000" />
+      <workItem from="1778175976541" duration="97000" />
+      <workItem from="1778496313409" duration="617000" />
     </task>
     <servers />
   </component>

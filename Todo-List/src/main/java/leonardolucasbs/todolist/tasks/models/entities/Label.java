@@ -1,0 +1,24 @@
+package leonardolucasbs.todolist.tasks.models.entities;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.UUID;
+
+@Entity(name = "labels")
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class Label {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
+
+    private String name;
+
+}
