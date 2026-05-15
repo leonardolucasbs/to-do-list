@@ -68,7 +68,7 @@ public class TaskService {
         TaskDTO taskFound = taskList.stream()
                 .filter(t -> taskId.equals(t.id()))
                 .findFirst()
-                .orElseThrow(() -> new RuntimeException("Task not found"));
+                .orElseThrow(() -> new RuntimeException("Task not found!"));
 
         taskRepository.deleteById(taskFound.id());
     }
